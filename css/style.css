@@ -1,0 +1,107 @@
+@font-face{
+	font-family: 'GothamRoundedBold';
+	src: url('../fonts/GothamRoundedBold.woff') format('woff');
+}
+
+@font-face{
+	font-family: 'GothamRoundedBook';
+	src: url('../fonts/GothamRoundedBook.woff') format('woff');
+}
+
+@font-face{
+	font-family: 'GothamRoundedMedium';
+	src: url('../fonts/GothamRoundedMedium.woff') format('woff');
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'GothamRoundedBook';
+}
+
+.container {
+	width: 90%;
+	margin: 0 auto;
+}
+.text-center {
+	text-align: center;
+}
+
+
+
+.header-area{
+    color: #fff;
+}
+.header-area .main-menu{
+	padding: 26px 0 250px;
+}
+.header-area .main-menu ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-align: center;
+}
+.header-area .main-menu ul li{
+    display: inline;
+    margin: 0 36px;
+}
+.header-area .main-menu ul li a{
+    color: #fff;
+    list-style: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-family: 'GothamRoundedBold';
+    letter-spacing: 2.1px;
+}
+.header-area .main-menu ul li a:hover{}
+
+.main-menu img.logo {
+    width: 56px;
+    height: 60px;
+}
+
+.header-area .welcome-txt {
+    margin: 0 0 220px;
+}
+.header-area .welcome-txt h2{
+	font-size: 33px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 6.5px;
+    margin: 0 0 14px;
+    line-height: 1;
+}
+.header-area .welcome-txt h5 {
+    font-size: 15px;
+    margin: 0 0 25px;
+    word-spacing: 4px;
+    letter-spacing: 2.17px;
+}
+.header-area .welcome-txt a{
+	background: red;
+    display: inline-block;
+    padding: 16px 25px;
+    text-transform: uppercase;
+    color: #ffff;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: 15px;
+}
+.header-area .social-profiles {
+    padding: 0 0 25px;
+}
+.header-area .social-profiles ul{
+	margin: 0;
+    padding: 00;
+    list-style: none;
+    text-align: center;
+}
+.header-area .social-profiles ul li{
+	display: inline-block;
+    margin: 0 10px;
+}
+.header-area .social-profiles ul li a{}
+.header-area .social-profiles ul li a i{}
+.header-area .social-profiles ul li a:hover i{}
