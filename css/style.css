@@ -79,15 +79,25 @@ body {
     word-spacing: 4px;
     letter-spacing: 2.17px;
 }
-.header-area .welcome-txt a{
-	background: red;
+a.btn{
+    font-family: 'GothamRoundedBold';
+    background: #16A085;
     display: inline-block;
-    padding: 16px 25px;
+    padding: 17px 33px;
     text-transform: uppercase;
     color: #ffff;
     text-decoration: none;
     letter-spacing: 1px;
-    font-size: 15px;
+    font-size: 12px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    transition: .3s;
+}
+a.btn:hover {
+    background: #fff;
+    color: #16A085;
+    border: 1px solid #16A085;
+    border-radius: 3px;
 }
 .header-area .social-profiles {
     padding: 0 0 25px;
@@ -103,5 +113,41 @@ body {
     margin: 0 10px;
 }
 .header-area .social-profiles ul li a{}
-.header-area .social-profiles ul li a i{}
-.header-area .social-profiles ul li a:hover i{}
+.header-area .social-profiles ul li a i{
+    font-size: 25px;
+    color: #fff;
+    transition: .3s;
+}
+.header-area .social-profiles ul li a:hover i{
+    color: #16a085;
+}
+
+/** getting-started-area **/
+.getting-started-area {
+    padding-top: 50px;
+    overflow: hidden;
+    max-height: 405px;
+}
+.text-area{
+    width: 38%;
+    margin-right: 2%;
+    float: left;
+}
+.text-area h3{
+    font-size: 18px;
+    font-family: 'GothamRoundedBold';
+    color: #16a085;
+}
+.text-area p{
+    font-size: 12px;
+    color: #373737;
+    font-family: 'GothamRoundedBook';
+}
+.image-area{
+    width: 58%;
+    margin-right: 2%;
+    float: left;
+}
+.image-area img{
+    max-width: 100%;
+}
