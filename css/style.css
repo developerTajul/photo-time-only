@@ -23,11 +23,15 @@ body {
 .container {
 	width: 90%;
 	margin: 0 auto;
+    overflow: hidden;
 }
 .text-center {
 	text-align: center;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'GothamRoundedBold';
+}
 
 
 .header-area{
@@ -124,30 +128,226 @@ a.btn:hover {
 
 /** getting-started-area **/
 .getting-started-area {
-    padding-top: 50px;
+    padding-top: 80px;
     overflow: hidden;
     max-height: 405px;
+    background: #F5F6F7;
 }
-.text-area{
+.getting-started-area .text-area{
     width: 38%;
     margin-right: 2%;
     float: left;
 }
-.text-area h3{
+.getting-started-area .text-area h3 {
     font-size: 18px;
     font-family: 'GothamRoundedBold';
     color: #16a085;
+    margin-bottom: 35px;
 }
-.text-area p{
-    font-size: 12px;
+.getting-started-area .text-area p {
+    font-size: 15px;
     color: #373737;
     font-family: 'GothamRoundedBook';
+    margin-bottom: 35px;
+    line-height: 1.5;
 }
-.image-area{
+.getting-started-area .image-area{
     width: 58%;
     margin-right: 2%;
     float: left;
 }
-.image-area img{
+.getting-started-area .image-area img{
     max-width: 100%;
 }
+
+/** mobile-area **/
+.mobile-area{
+    padding-top: 100px;
+    overflow: hidden;
+    max-height: 350px;
+}
+.mobile-area .text-area{
+    width: 48%;
+    margin-right: 2%;
+    float: left;
+}
+.mobile-area .text-area h3{
+    font-size: 18px;
+    font-family: 'GothamRoundedBold';
+    color: #16a085;
+    margin-bottom: 35px;
+    text-transform: uppercase;
+}
+.mobile-area .text-area p{
+    font-size: 15px;
+    color: #373737;
+    font-family: 'GothamRoundedBook';
+    margin-bottom: 35px;
+}
+.mobile-area .image-area{
+    width: 48%;
+    margin-right: 2%;
+    float: left;
+}
+.mobile-area .image-area img{
+    max-width: 100%;
+}
+
+/** gallery-area **/
+.gallery-area{
+    padding: 100px;
+    overflow: hidden;
+    background: #F5F6F7;
+}
+.gallery-area .gallery-items-wrapper{
+
+}
+.gallery-area .gallery-items-wrapper .gallery-item{
+    float: left;
+    width: 32%;
+    margin-right:2%;
+    position: relative;
+}
+.gallery-area .gallery-items-wrapper .gallery-item:last-child{
+    margin-right: 0;
+}
+.gallery-area .gallery-items-wrapper .gallery-item img{
+    max-width: 100%;
+}
+
+.gallery-area .gallery-items-wrapper .gallery-item .gallery-thumb:before{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: white;
+    position: absolute;
+    opacity: .5;
+    display: none;
+    transition: .3s;
+}
+.gallery-area .gallery-items-wrapper .gallery-item:hover .gallery-thumb:before{
+    display: block;
+}
+.gallery-area .gallery-items-wrapper .gallery-item .text {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    transform: translateY(-50%);
+    display: none;
+    transition: .3s;
+    color: #fff;
+    padding: 0 25px;
+}
+.gallery-area .gallery-items-wrapper .gallery-item:hover .text{
+    display: block;
+}
+.gallery-area .gallery-items-wrapper .gallery-item .text h5{
+    font-size: 16px;
+    color: #373737;
+    text-transform: uppercase;
+}
+.gallery-area .gallery-items-wrapper .gallery-item .text p{
+    color: #373737;
+}
+
+
+/** subscribe-area **/
+.subscribe-area {
+    padding: 300px 0;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+    background-size: cover !important;
+}
+.subscribe-area .subscribe-form{}
+.subscribe-area .subscribe-form h2 {
+    font-size: 24px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+.subscribe-area .subscribe-form form{
+    position: relative;
+}
+.subscribe-area .subscribe-form input[type="email"] {
+    padding: 20px 15px;
+    border-radius: 5px;
+    width: 300px;
+    border: 0;
+}
+.subscribe-area .subscribe-form button[type="submit"] {
+    padding: 20px 15px;
+    position: absolute;
+    top: 0;
+    right: 442px;
+    border: 0;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+    background: #16A085;
+    color: #fff;
+}
+
+/** download-area **/
+.download-area{
+    padding: 80px 0;
+    background: #F5F6F7;
+}
+.download-area .download-content {
+    margin: 0 0 30px;
+}
+.download-area .download-content h5 {
+    font-size: 20px;
+    color: #373737;
+    text-transform: uppercase;
+    margin: 0 0 10px;
+}
+.download-area .download-content p {
+    padding: 0 300px;
+    line-height: 1.3;
+    color: #373737;
+    font-size: 15px;
+    font-family: 'GothamRoundedMedium';
+    margin: 0;
+}
+.download-area .download-links{}
+.download-area .download-links ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+.download-area .download-links ul li{
+    display: inline;
+    position: relative;
+    margin-right: 20px;
+}
+.download-area .download-links ul li a{
+    text-decoration: none;
+    text-transform: capitalize;
+    background: #1ABC9C;
+    padding: 13px 80px 13px 15px;
+    color: #fff;
+    display: inline-block;
+    border-radius: 3px;
+
+}
+.download-area .download-links ul li i{
+    display: inline-block;
+    position: absolute;
+    top: -12px;
+    right: 0;
+    background: #16a085;
+    padding: 12px 15px;
+    font-size: 20px;
+    width: 20px;
+    height: 20px;
+    border-radius: 0 5px 5px 0;
+    color: #fff;
+    cursor: pointer;
+}
+.download-area .download-links ul li a:hover{}
+
+
+
